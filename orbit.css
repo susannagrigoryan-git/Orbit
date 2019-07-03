@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.orbit{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    border: 1px solid rgb(159, 159, 192);
+    border-radius: 50%;
+}
+
+
+img{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 91px;
+    left: 91px;
+    border-radius: 100%;
+    animation-name: circle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes circle{
+    from {transform: rotate(0deg) translateX(101px);}
+    to {transform: rotate(360deg) translateX(101px);}
+}
